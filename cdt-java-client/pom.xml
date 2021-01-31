@@ -5,7 +5,7 @@
     <!-- NOTE(kklisura): Do not add parent tag here, since it gets deployed (via mvn deploy)[at least on snapshot repo],
          so clients won't be able to pull it unless parent is also deployed -->
 
-    <groupId>com.github.kklisura.cdt</groupId>
+    <groupId>consulo.internal.com.github.kklisura.cdt</groupId>
     <artifactId>cdt-java-client</artifactId>
     <version>3.0.0</version>
     <packaging>jar</packaging>

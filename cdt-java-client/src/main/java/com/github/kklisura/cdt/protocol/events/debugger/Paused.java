@@ -33,7 +33,7 @@ public class Paused {
 
   private List<CallFrame> callFrames;
 
-  private PausedReason reason;
+  private String reason;
 
   @Optional private Map<String, Object> data;
 
@@ -56,12 +56,12 @@ public class Paused {
   }
 
   /** Pause reason. */
-  public PausedReason getReason() {
+  public String getReason() {
     return reason;
   }
 
   /** Pause reason. */
-  public void setReason(PausedReason reason) {
+  public void setReason(String reason) {
     this.reason = reason;
   }
 

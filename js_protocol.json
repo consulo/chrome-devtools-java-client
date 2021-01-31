@@ -1104,20 +1104,7 @@
                         {
                             "name": "reason",
                             "description": "Pause reason.",
-                            "type": "string",
-                            "enum": [
-                                "ambiguous",
-                                "assert",
-                                "debugCommand",
-                                "DOM",
-                                "EventListener",
-                                "exception",
-                                "instrumentation",
-                                "OOM",
-                                "other",
-                                "promiseRejection",
-                                "XHR"
-                            ]
+                            "type": "string"
                         },
                         {
                             "name": "data",
