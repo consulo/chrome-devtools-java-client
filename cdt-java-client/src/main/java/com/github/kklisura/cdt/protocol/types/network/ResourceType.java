@@ -42,6 +42,8 @@ public enum ResourceType {
   XHR,
   @JsonProperty("Fetch")
   FETCH,
+  @JsonProperty("Prefetch")
+  PREFETCH,
   @JsonProperty("EventSource")
   EVENT_SOURCE,
   @JsonProperty("WebSocket")
@@ -54,6 +56,8 @@ public enum ResourceType {
   PING,
   @JsonProperty("CSPViolationReport")
   CSP_VIOLATION_REPORT,
+  @JsonProperty("Preflight")
+  PREFLIGHT,
   @JsonProperty("Other")
   OTHER
 }

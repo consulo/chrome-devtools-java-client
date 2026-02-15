@@ -3,12 +3,12 @@
     <modelVersion>4.0.0</modelVersion>
 
     <parent>
-        <groupId>consulo.internal.com.github.kklisura.cdt</groupId>
+        <groupId>com.github.kklisura.cdt</groupId>
         <artifactId>ctd-java-client-root</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
-    <groupId>consulo.internal.com.github.kklisura.cdt.examples</groupId>
+    <groupId>com.github.kklisura.cdt.examples</groupId>
     <artifactId>cdt-examples</artifactId>
     <version>1.0-SNAPSHOT</version>
     <packaging>jar</packaging>
@@ -29,9 +29,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>consulo.internal.com.github.kklisura.cdt</groupId>
+            <groupId>com.github.kklisura.cdt</groupId>
             <artifactId>cdt-java-client</artifactId>
-            <version>3.0.1</version>
+            <version>4.0.0</version>
         </dependency>
 
         <dependency>
