@@ -22,7 +22,7 @@ Add the following dependency to your `pom.xml`:
 
 ```xml
 <dependency>
-  <groupId>com.github.kklisura.cdt</groupId>
+  <groupId>consulo.internal.com.github.kklisura.cdt</groupId>
   <artifactId>cdt-java-client</artifactId>
   <version>4.0.0</version>
 </dependency>

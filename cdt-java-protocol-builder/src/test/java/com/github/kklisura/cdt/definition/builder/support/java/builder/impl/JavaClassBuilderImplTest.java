@@ -4,7 +4,7 @@ package com.github.kklisura.cdt.definition.builder.support.java.builder.impl;
  * #%L
  * cdt-java-protocol-builder
  * %%
- * Copyright (C) 2018 - 2021 Kenan Klisura
+ * Copyright (C) 2018 - 2026 Kenan Klisura
  * %%
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -20,15 +20,8 @@ package com.github.kklisura.cdt.definition.builder.support.java.builder.impl;
  * #L%
  */
 
-import static org.easymock.EasyMock.capture;
-import static org.easymock.EasyMock.eq;
-import static org.junit.Assert.assertEquals;
-
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.kklisura.cdt.definition.builder.support.java.builder.SourceProject;
-import java.io.File;
-import java.io.IOException;
-import java.nio.file.Path;
 import org.easymock.Capture;
 import org.easymock.EasyMockRunner;
 import org.easymock.EasyMockSupport;
@@ -36,6 +29,14 @@ import org.easymock.Mock;
 import org.junit.Before;
 import org.junit.Test;
 import org.junit.runner.RunWith;
+
+import java.io.File;
+import java.io.IOException;
+import java.nio.file.Path;
+
+import static org.easymock.EasyMock.capture;
+import static org.easymock.EasyMock.eq;
+import static org.junit.Assert.assertEquals;
 
 /**
  * Java class builder test.
