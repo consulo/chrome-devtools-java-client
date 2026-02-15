@@ -1,5 +1,5 @@
 
-Lists of 37 third-party dependencies.
+Lists of 39 third-party dependencies.
      (ASF 2.0) Code Generation Library (cglib:cglib-nodep:2.2.2 - http://cglib.sourceforge.net/)
      (Eclipse Public License - v 1.0) (GNU Lesser General Public License) Logback Classic Module (ch.qos.logback:logback-classic:1.2.3 - http://logback.qos.ch/logback-classic)
      (Eclipse Public License - v 1.0) (GNU Lesser General Public License) Logback Core Module (ch.qos.logback:logback-core:1.2.3 - http://logback.qos.ch/logback-core)
@@ -13,8 +13,9 @@ Lists of 37 third-party dependencies.
      (The Apache Software License, Version 2.0) JSON library from Android SDK (com.vaadin.external.google:android-json:0.0.20131108.vaadin1 - http://developer.android.com/sdk)
      (Dual license consisting of the CDDL v1.1 and GPL v2) WebSocket server API (javax.websocket:javax.websocket-api:1.1 - http://websocket-spec.java.net)
      (Eclipse Public License v1.0) JUnit (junit:junit:4.13.1 - http://junit.org)
+     (The Apache Software License, Version 2.0) Byte Buddy (without dependencies) (net.bytebuddy:byte-buddy:1.17.5 - https://bytebuddy.net/byte-buddy)
      (Bouncy Castle Licence) Bouncy Castle Provider (org.bouncycastle:bcprov-jdk15on:1.50 - http://www.bouncycastle.org/java.html)
-     (The Apache Software License, Version 2.0) EasyMock (org.easymock:easymock:3.4 - http://easymock.org/easymock)
+     (The Apache Software License, Version 2.0) EasyMock (org.easymock:easymock:5.6.0 - http://easymock.org/easymock)
      (Dual license consisting of the CDDL v1.1 and GPL v2) grizzly-framework (org.glassfish.grizzly:grizzly-framework:2.3.25 - http://grizzly.java.net/grizzly-framework)
      (Dual license consisting of the CDDL v1.1 and GPL v2) grizzly-http (org.glassfish.grizzly:grizzly-http:2.3.25 - http://grizzly.java.net/grizzly-http)
      (Dual license consisting of the CDDL v1.1 and GPL v2) grizzly-http-server (org.glassfish.grizzly:grizzly-http-server:2.3.25 - http://grizzly.java.net/grizzly-http-server)
@@ -27,7 +28,8 @@ Lists of 37 third-party dependencies.
      (BSD 3-Clause License) Hamcrest Core (org.hamcrest:hamcrest-core:1.3 - https://github.com/hamcrest/JavaHamcrest/hamcrest-core)
      (Eclipse Public License v1.0) JaCoCo :: Agent (org.jacoco:org.jacoco.agent:0.8.0 - http://org.jacoco.agent)
      (LGPL 2.1) (MPL 1.1) (The Apache Software License, Version 2.0) Javassist (org.javassist:javassist:3.24.1-GA - http://www.javassist.org/)
-     (The Apache Software License, Version 2.0) Objenesis (org.objenesis:objenesis:2.2 - http://objenesis.org)
+     (The Apache Software License, Version 2.0) Objenesis (org.objenesis:objenesis:3.4 - https://objenesis.org/objenesis)
+     (BSD-3-Clause) asm (org.ow2.asm:asm:9.8 - http://asm.ow2.io/)
      (The Apache Software License, Version 2.0) powermock-api-easymock (org.powermock:powermock-api-easymock:1.6.6 - http://www.powermock.org/powermock-api/powermock-api-easymock)
      (The Apache Software License, Version 2.0) powermock-api-support (org.powermock:powermock-api-support:1.6.6 - http://www.powermock.org/powermock-api/powermock-api-support)
      (The Apache Software License, Version 2.0) powermock-core (org.powermock:powermock-core:1.6.6 - http://www.powermock.org)

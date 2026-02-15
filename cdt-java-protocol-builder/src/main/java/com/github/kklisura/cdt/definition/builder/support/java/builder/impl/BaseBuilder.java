@@ -23,9 +23,8 @@ package com.github.kklisura.cdt.definition.builder.support.java.builder.impl;
 import com.github.javaparser.ast.CompilationUnit;
 import com.github.kklisura.cdt.definition.builder.support.java.builder.Builder;
 import com.github.kklisura.cdt.definition.builder.support.java.builder.SourceProject;
-import lombok.Getter;
-
 import java.io.IOException;
+import lombok.Getter;
 
 /**
  * Base builder.
