@@ -23,6 +23,7 @@ package com.github.kklisura.cdt.protocol.events.debugger;
 import com.fasterxml.jackson.annotation.JsonProperty;
 
 /** Pause reason. */
+@Deprecated // unused - due inside Paused used raw string
 public enum PausedReason {
   @JsonProperty("ambiguous")
   AMBIGUOUS,
