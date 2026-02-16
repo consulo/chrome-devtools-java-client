@@ -20,10 +20,6 @@ package com.github.kklisura.cdt.launch;
  * #L%
  */
 
-import static com.github.kklisura.cdt.utils.ChromeDevToolsUtils.closeQuietly;
-import static com.github.kklisura.cdt.utils.FilesUtils.deleteQuietly;
-import static com.github.kklisura.cdt.utils.FilesUtils.randomTempDir;
-
 import com.github.kklisura.cdt.launch.config.ChromeLauncherConfiguration;
 import com.github.kklisura.cdt.launch.exceptions.ChromeProcessException;
 import com.github.kklisura.cdt.launch.exceptions.ChromeProcessTimeoutException;
@@ -32,6 +28,9 @@ import com.github.kklisura.cdt.launch.support.annotations.ChromeArgument;
 import com.github.kklisura.cdt.launch.support.impl.ProcessLauncherImpl;
 import com.github.kklisura.cdt.services.ChromeService;
 import com.github.kklisura.cdt.services.impl.ChromeServiceImpl;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.BufferedReader;
 import java.io.IOException;
 import java.io.InputStreamReader;
@@ -49,8 +48,10 @@ import java.util.concurrent.TimeoutException;
 import java.util.concurrent.atomic.AtomicReference;
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+
+import static com.github.kklisura.cdt.utils.ChromeDevToolsUtils.closeQuietly;
+import static com.github.kklisura.cdt.utils.FilesUtils.deleteQuietly;
+import static com.github.kklisura.cdt.utils.FilesUtils.randomTempDir;
 
 /**
  * Chrome launcher.
