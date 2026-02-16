@@ -38,6 +38,9 @@ import com.github.kklisura.cdt.services.types.ChromeTab;
 import com.github.kklisura.cdt.services.types.EventListenerImpl;
 import com.github.kklisura.cdt.services.types.MethodInvocation;
 import com.github.kklisura.cdt.services.utils.ProxyUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import java.io.IOException;
 import java.lang.reflect.InvocationHandler;
 import java.util.*;
@@ -45,8 +48,6 @@ import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.function.Consumer;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
 
 /**
  * Dev tools service implementation.
@@ -188,6 +189,12 @@ public abstract class ChromeDevToolsServiceImpl
       if (chromeService != null) {
         chromeService.clearChromeDevToolsServiceCache(chromeTab);
       }
+
+      for (InvocationResult result : invocationResultMap.values()) {
+        result.signalResultReady(false, null);
+      }
+
+      invocationResultMap.clear();
 
       eventExecutorService.shutdown();
 
