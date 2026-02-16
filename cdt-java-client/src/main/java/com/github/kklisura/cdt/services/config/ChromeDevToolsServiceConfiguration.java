@@ -22,7 +22,6 @@ package com.github.kklisura.cdt.services.config;
 
 import com.github.kklisura.cdt.services.executors.DefaultEventExecutorService;
 import com.github.kklisura.cdt.services.executors.EventExecutorService;
-import com.github.kklisura.cdt.services.utils.ConfigurationUtils;
 
 /**
  * Chrome DevTools service configuration.
@@ -30,16 +29,10 @@ import com.github.kklisura.cdt.services.utils.ConfigurationUtils;
  * @author Kenan Klisura
  */
 public class ChromeDevToolsServiceConfiguration {
-  private static final String READ_TIMEOUT_PROPERTY =
-      "com.github.kklisura.cdt.services.config.readTimeout";
+  /** Read timeout in seconds. Default 60. */
+  private long readTimeout = 60;
 
-  private static final long READ_TIMEOUT =
-      ConfigurationUtils.systemProperty(READ_TIMEOUT_PROPERTY, 0);
-
-  /** Read timeout in seconds. Default 0. */
-  private long readTimeout = READ_TIMEOUT;
-
-  private EventExecutorService eventExecutorService = new DefaultEventExecutorService();
+  private EventExecutorService eventExecutorService;
 
   /**
    * Gets read timeout in seconds.
@@ -53,9 +46,6 @@ public class ChromeDevToolsServiceConfiguration {
   /**
    * Sets read timeout in seconds. 0 for infinite timeout.
    *
-   * <p>This property can be set by {@link ChromeDevToolsServiceConfiguration#READ_TIMEOUT_PROPERTY}
-   * property.
-   *
    * @param readTimeout Read timeout in seconds.
    */
   public void setReadTimeout(long readTimeout) {
@@ -68,6 +58,9 @@ public class ChromeDevToolsServiceConfiguration {
    * @return Event executor service.
    */
   public EventExecutorService getEventExecutorService() {
+    if (eventExecutorService == null) {
+      eventExecutorService = new DefaultEventExecutorService();
+    }
     return eventExecutorService;
   }
 
